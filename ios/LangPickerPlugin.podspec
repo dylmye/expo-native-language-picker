@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     :tvos => '15.1'
   }
   s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/dylmye/expo-native-language-picker' }
+  s.source         = { git: 'https://github.com/dylmye/expo-native-language-picker', :tag => "v#{package['version']}" }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'

@@ -3,8 +3,6 @@ import { NativeModule, requireNativeModule } from 'expo';
 import { LangPickerPluginModuleEvents } from './LangPickerPlugin.types';
 
 declare class LangPickerPluginModule extends NativeModule<LangPickerPluginModuleEvents> {
-  PI: number;
-  hello(): string;
   setValueAsync(value: string): Promise<void>;
 }
 

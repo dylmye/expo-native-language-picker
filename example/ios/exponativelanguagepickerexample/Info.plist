@@ -27,7 +27,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>expo.modules.langpicker.example</string>
+          <string>expo.modules.dylmye.example</string>
         </array>
       </dict>
     </array>

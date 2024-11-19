@@ -1,4 +1,4 @@
-package expo.modules.langpicker.example
+package expo.modules.dylmye.example
 
 import android.os.Build
 import android.os.Bundle

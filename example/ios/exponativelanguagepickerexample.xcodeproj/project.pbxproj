@@ -302,7 +302,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "expo.modules.langpicker.example";
+				PRODUCT_BUNDLE_IDENTIFIER = "expo.modules.dylmye.example";
 				PRODUCT_NAME = "exponativelanguagepickerexample";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -329,7 +329,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "expo.modules.langpicker.example";
+				PRODUCT_BUNDLE_IDENTIFIER = "expo.modules.dylmye.example";
 				PRODUCT_NAME = "exponativelanguagepickerexample";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
