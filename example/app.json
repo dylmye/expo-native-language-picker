@@ -23,8 +23,13 @@
       },
       "package": "expo.modules.dylmye.example"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "../app.plugin.js",
+        {
+          "languages": ["en_GB", "fr_FR"]
+        }
+      ]
+    ]
   }
 }

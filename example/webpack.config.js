@@ -6,7 +6,7 @@ module.exports = async (env, argv) => {
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['expo-native-language-picker'],
+        dangerouslyAddModulePathsToTranspile: ['@dylmye/expo-native-language-picker'],
       },
     },
     argv

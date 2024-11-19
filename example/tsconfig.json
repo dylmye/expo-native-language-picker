@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-native-language-picker": ["../src/index"],
-      "expo-native-language-picker/*": ["../src/*"]
+      "@dylmye/expo-native-language-picker": ["../src/index"],
+      "@dylmye/expo-native-language-picker/*": ["../src/*"]
     }
   }
 }

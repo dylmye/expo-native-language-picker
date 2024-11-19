@@ -19,7 +19,7 @@ config.resolver.nodeModulesPaths = [
 ];
 
 config.resolver.extraNodeModules = {
-  'expo-native-language-picker': '..',
+  '@dylmye/expo-native-language-picker': '..',
 };
 
 config.watchFolders = [path.resolve(__dirname, '..')];
