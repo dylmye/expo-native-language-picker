@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "LangPickerPluginModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.langpicker.LangPickerPluginModule"
+    ]
+  }
+}
