@@ -25,7 +25,7 @@ const withAndroid: ConfigPlugin<NativeLangPickerOptions> = (config, { languages 
     return withDangerousMod(config, [
         "android",
         async (cfg) => {
-            const xmlPath = path.join(cfg.modRequest.platformProjectRoot, 'res/xml');
+            const xmlPath = path.join(cfg.modRequest.platformProjectRoot, 'app/src/main/res/xml');
 
             const localesConfigContents = `<?xml version="1.0" encoding="utf-8"?>
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
