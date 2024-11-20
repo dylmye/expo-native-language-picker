@@ -25,7 +25,7 @@ const withAndroid: ConfigPlugin<NativeLangPickerOptions> = (config, { languages 
     return withDangerousMod(config, [
         "android",
         async (cfg) => {
-            const xmlPath = path.join(cfg.modRequest.platformProjectRoot, 'res/xml/locales_config.xml');
+            const xmlPath = path.join(cfg.modRequest.platformProjectRoot, 'res/xml');
 
             const localesConfigContents = `<?xml version="1.0" encoding="utf-8"?>
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
@@ -33,9 +33,14 @@ const withAndroid: ConfigPlugin<NativeLangPickerOptions> = (config, { languages 
 </locale-config>
             `;
 
-            await fs.writeFile(xmlPath, localesConfigContents, 'utf-8');
-
-            return cfg;
+            try {
+                await fs.mkdir(xmlPath, { recursive: true });
+                await fs.writeFile(xmlPath + '/locales_config.xml', localesConfigContents, 'utf-8');
+            } catch (e) {
+                console.error("Unable to create locale config", e);
+            } finally {
+                return cfg;
+            }
         }
     ])
 }
