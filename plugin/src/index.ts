@@ -29,9 +29,8 @@ const withAndroid: ConfigPlugin<NativeLangPickerOptions> = (config, { languages 
 
             const localesConfigContents = `<?xml version="1.0" encoding="utf-8"?>
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
-    ${languages.map(l => `<locale android:name="${l}"/>\n\t`)}
-</locale-config>
-            `;
+  ${languages.map(l => `<locale android:name="${l}"/>`).join(`\n\t`)}
+</locale-config>`;
 
             try {
                 await fs.mkdir(xmlPath, { recursive: true });
