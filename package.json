@@ -1,6 +1,6 @@
 {
   "name": "@dylmye/expo-native-language-picker",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "Expo integration with native language picker APIs",
   "main": "build/index.js",
   "types": "build/index.d.ts",
