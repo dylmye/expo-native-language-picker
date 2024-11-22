@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 group = 'expo.modules.dylmye'
-version = '0.10.0'
+version = '0.10.1'
 
 def expoModulesCorePlugin = new File(project(":expo-modules-core").projectDir.absolutePath, "ExpoModulesCorePlugin.gradle")
 apply from: expoModulesCorePlugin
